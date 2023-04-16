@@ -1,6 +1,7 @@
 // CRUD Operations with MongoDB.
-const mongodb = require(mongodb);
+require('dotenv').config();
+const mongodb = require('mongodb');
 const MongoClient = mongodb.MongoClient;
 
-const connectionURL = '';
-const database = '';
+const connectionURL = process.env.MONGO_URL;
+const database = process.env.DATABASE_NAME;
